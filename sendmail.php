@@ -21,15 +21,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
         // SMTP settings (Afrihost / your email)
         $mail->isSMTP();
-        $mail->Host = 'mail.fundanathiupgrading.co.za';
+        $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'support@fundanathiupgrading.co.za';
-        $mail->Password = 'Sbongakonke02@';
-        $mail->SMTPSecure = false;
-        $mail->Port = 25;
+        $mail->Username = 'sbongakonkesihle31@gmail.com';
+        $mail->Password = 'oujo canz sskj vxjd';
+        $mail->SMTPSecure = true;
+        $mail->Port = 587;
 
         // Sender & Receiver
-        $mail->setFrom('support@fundanathiupgrading.co.za', 'InvoVerse Holdings Website');
+        $mail->setFrom('sbongakonkesihle31@gmail.com', 'InvoVerse Holdings Website');
         $mail->addAddress('sbongakonkesihle31@gmail.com');
 
         // Email content
